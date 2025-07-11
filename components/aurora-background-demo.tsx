@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import React from "react";
+import Image from "next/image";
 import { SignedIn, SignedOut, SignUpButton, UserButton } from "@clerk/nextjs";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 
@@ -20,6 +21,15 @@ export default function AuroraBackgroundDemo() {
         }}
         className="relative flex flex-col gap-4 items-center justify-center px-4 sm:px-6 md:px-8"
       >
+        <div className="mb-4 sm:mb-6">
+          <Image 
+            src="/images/d-bans-logo.png" 
+            alt="D-BANS Logo" 
+            width={200}
+            height={200}
+            className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 object-contain mx-auto"
+          />
+        </div>
         <div className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold dark:text-white text-center leading-tight">
           D-BANS <br /> LAUNCHING SOON
         </div>
