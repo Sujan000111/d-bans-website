@@ -4,13 +4,12 @@ import { motion } from "framer-motion";
 import React from "react";
 import Image from "next/image";
 import { SignedIn, SignedOut, SignUpButton, UserButton } from "@clerk/nextjs";
-import { AuroraBackground } from "@/components/ui/aurora-background";
 
 export default function AuroraBackgroundDemo() {
   // Check if Clerk is available
   const hasClerk = !!process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
   return (
-    <AuroraBackground>
+    <div className="min-h-screen flex items-center justify-center">
       <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -36,7 +35,7 @@ export default function AuroraBackgroundDemo() {
         <div className="font-extralight text-sm sm:text-lg md:text-2xl lg:text-4xl dark:text-neutral-200 py-2 md:py-4 text-center max-w-4xl">
           Join the waitlist for best offers
         </div>
-        <div className="flex gap-4 mt-2 md:mt-4">
+        <div className="flex gap-4 mt-2 md:mt-4 mb-20 md:mb-24">
           {hasClerk ? (
             <>
               <SignedOut>
@@ -60,6 +59,6 @@ export default function AuroraBackgroundDemo() {
           )}
         </div>
       </motion.div>
-    </AuroraBackground>
+    </div>
   );
 } 

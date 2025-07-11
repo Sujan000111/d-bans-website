@@ -1,7 +1,6 @@
 import AuroraBackgroundDemo from '@/components/aurora-background-demo'
-import { WobbleCardDemo } from '@/components/wobble-card-demo'
-import { DraggableCardDemo } from '@/components/draggable-card-demo'
 import { FloatingDock } from '@/components/ui/floating-dock'
+import { AuroraBackground } from '@/components/ui/aurora-background'
 import {
   IconBrandInstagram,
   IconBrandX,
@@ -11,20 +10,12 @@ import {
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black">
-      <AuroraBackgroundDemo />
-      
-      <div className="px-4 sm:px-6 md:px-8 pb-12 md:pb-16">
-        <WobbleCardDemo />
-      </div>
-      
-      {/* Interactive Collections Section */}
-      <div className="pb-16 md:pb-20">
-        <DraggableCardDemo />
-      </div>
-      
-      {/* Fixed floating dock at bottom */}
-      <div className="fixed bottom-2 sm:bottom-4 left-1/2 transform -translate-x-1/2 z-50">
+    <AuroraBackground>
+      <main className="min-h-screen">
+        <AuroraBackgroundDemo />
+        
+        {/* Fixed floating dock at bottom */}
+        <div className="fixed bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 z-50">
         <FloatingDock
           items={[
             {
@@ -61,5 +52,6 @@ export default function Home() {
         />
       </div>
     </main>
+    </AuroraBackground>
   )
 } 
