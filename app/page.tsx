@@ -36,12 +36,12 @@ export default function Home() {
             </Button>
           </div>
           
-          <div className="min-h-[20rem] sm:min-h-[25rem] md:min-h-[30rem] w-full flex items-start justify-center gap-4 sm:gap-6 md:gap-8 flex-wrap pt-4 px-4 pb-8">
+          <div className="min-h-[16rem] sm:min-h-[20rem] md:min-h-[30rem] w-full flex items-start justify-center gap-3 sm:gap-6 md:gap-8 flex-wrap pt-2 sm:pt-4 px-2 sm:px-4 pb-6 sm:pb-8">
             <PinContainer
               title="Instagram"
               href="https://www.instagram.com/dbansofficial?igsh=MW4wOWthM29iM3czdQ=="
             >
-              <div className="flex basis-full flex-col p-3 sm:p-4 tracking-tight text-slate-100/50 w-[16rem] h-[16rem] sm:w-[18rem] sm:h-[18rem] md:w-[20rem] md:h-[20rem]">
+              <div className="flex basis-full flex-col p-2 sm:p-3 md:p-4 tracking-tight text-slate-100/50 w-[12rem] h-[12rem] sm:w-[16rem] sm:h-[16rem] md:w-[20rem] md:h-[20rem]">
                 <h3 className="max-w-xs !pb-2 !m-0 font-bold text-sm sm:text-base text-slate-100">
                   D-BANS Instagram
                 </h3>
@@ -50,8 +50,8 @@ export default function Home() {
                     Follow us for the latest fashion trends and exclusive content.
                   </span>
                 </div>
-                <div className="flex flex-1 w-full rounded-lg mt-3 sm:mt-4 bg-gradient-to-br from-pink-500 via-purple-500 to-violet-500 items-center justify-center">
-                  <IconBrandInstagram className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 text-white" />
+                <div className="flex flex-1 w-full rounded-lg mt-2 sm:mt-3 md:mt-4 bg-gradient-to-br from-pink-500 via-purple-500 to-violet-500 items-center justify-center">
+                  <IconBrandInstagram className="h-8 w-8 sm:h-12 sm:w-12 md:h-16 md:w-16 text-white" />
                 </div>
               </div>
             </PinContainer>
@@ -60,7 +60,7 @@ export default function Home() {
               title="YouTube"
               href="https://www.youtube.com/@D-BANS"
             >
-              <div className="flex basis-full flex-col p-3 sm:p-4 tracking-tight text-slate-100/50 w-[16rem] h-[16rem] sm:w-[18rem] sm:h-[18rem] md:w-[20rem] md:h-[20rem]">
+              <div className="flex basis-full flex-col p-2 sm:p-3 md:p-4 tracking-tight text-slate-100/50 w-[12rem] h-[12rem] sm:w-[16rem] sm:h-[16rem] md:w-[20rem] md:h-[20rem]">
                 <h3 className="max-w-xs !pb-2 !m-0 font-bold text-sm sm:text-base text-slate-100">
                   D-BANS YouTube
                 </h3>
@@ -69,8 +69,8 @@ export default function Home() {
                     Subscribe for fashion videos, tutorials, and behind-the-scenes content.
                   </span>
                 </div>
-                <div className="flex flex-1 w-full rounded-lg mt-3 sm:mt-4 bg-gradient-to-br from-red-500 via-orange-500 to-yellow-500 items-center justify-center">
-                  <IconBrandYoutube className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 text-white" />
+                <div className="flex flex-1 w-full rounded-lg mt-2 sm:mt-3 md:mt-4 bg-gradient-to-br from-red-500 via-orange-500 to-yellow-500 items-center justify-center">
+                  <IconBrandYoutube className="h-8 w-8 sm:h-12 sm:w-12 md:h-16 md:w-16 text-white" />
                 </div>
               </div>
             </PinContainer>
@@ -79,7 +79,7 @@ export default function Home() {
               title="X (Twitter)"
               href="https://x.com/DbansOfficial?t=uTXk1lL7veHjsR4OMXNezg&s=09"
             >
-              <div className="flex basis-full flex-col p-3 sm:p-4 tracking-tight text-slate-100/50 w-[16rem] h-[16rem] sm:w-[18rem] sm:h-[18rem] md:w-[20rem] md:h-[20rem]">
+              <div className="flex basis-full flex-col p-2 sm:p-3 md:p-4 tracking-tight text-slate-100/50 w-[12rem] h-[12rem] sm:w-[16rem] sm:h-[16rem] md:w-[20rem] md:h-[20rem]">
                 <h3 className="max-w-xs !pb-2 !m-0 font-bold text-sm sm:text-base text-slate-100">
                   D-BANS X (Twitter)
                 </h3>
@@ -88,8 +88,8 @@ export default function Home() {
                     Follow us for quick updates, announcements, and fashion tips.
                   </span>
                 </div>
-                <div className="flex flex-1 w-full rounded-lg mt-3 sm:mt-4 bg-gradient-to-br from-slate-500 via-gray-500 to-zinc-500 items-center justify-center">
-                  <IconBrandX className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 text-white" />
+                <div className="flex flex-1 w-full rounded-lg mt-2 sm:mt-3 md:mt-4 bg-gradient-to-br from-slate-500 via-gray-500 to-zinc-500 items-center justify-center">
+                  <IconBrandX className="h-8 w-8 sm:h-12 sm:w-12 md:h-16 md:w-16 text-white" />
                 </div>
               </div>
             </PinContainer>
